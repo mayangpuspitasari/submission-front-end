@@ -1,0 +1,282 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #344955;
+}
+
+header {
+  display: inline;
+  margin-bottom:90px;
+}
+
+header.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index:999;
+  height:65px;
+  background:#69a7e4;
+  margin-inline: auto;
+  
+  position: sticky;
+  padding-block: 1rem;
+  top: 0;
+}
+
+header.navbar-container .logo img {
+  width: 150px;
+  
+ 
+}
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem 1.5rem;
+  
+}
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+header.navbar-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+header.navbar-container .nav-list li:hover a {
+  background-color: #344955;
+  color: white;
+  font-weight:bold;
+}
+
+main .jumbotron {
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  height:500px;
+  display: flex;
+  align-items: center;
+  
+}
+
+ main .jumbotron .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+main .jumbotron .content .content-description {
+  flex: 1 1;
+}
+main .jumbotron .content .content-description .title {
+  margin-block: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+main .jumbotron .content .content-description .name {
+  margin-block: 1rem;
+  font-size: 3.0rem;
+  color: white;
+}
+
+main .jumbotron .content .social-media{
+  margin-top: 50px 
+}
+main .jumbotron .content .social-media ul{
+  display:flex;
+  gap: 1.7rem;
+  margin: auto;
+}
+main .jumbotron .content .social-media li {
+  list-style-type: none;
+  border:1px solid white ;
+  padding:0.5rem 0.7rem;
+  border-radius:999px;
+  box-shadow: 0px 3px 3px 1px #69a7e4;
+
+}
+main .jumbotron .content .social-media li:hover {
+background-color:#69a7e4;
+color:black;
+
+}
+
+main .jumbotron .content .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color:#69a7e4;
+  transition: all 0.1s ease-in-out;
+}
+main .jumbotron .content .social-media li a:hover {
+  color:black;
+}
+
+main .jumbotron .content .content-image {
+  flex: 1;
+  display: flex;
+  
+}
+main .jumbotron .content .content-image img {
+  width: 260px;
+  height:260px;
+  min-width: 250px;
+  margin: auto;
+  border-radius: 999px;
+  box-shadow: 5px 5px 5px 7px #69a7e4;
+  border:2px solid white;
+  
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  color:white;
+  
+  
+}
+
+main .content-utama .title .me{
+  color:#69a7e4;
+  text-align:center;
+  font-weight:bold;
+  display: flex;
+  padding-top: 8rem;
+  justify-content: center;
+  
+}
+
+main .content-utama article aside{
+  display:flex;
+  justify-content:space-around;
+  gap:4rem;
+  height:500px;
+  margin-top:100px;
+}
+
+
+main .content-utama aside .foto img{
+  width: 260px;
+  height:260px;
+  min-width: 250px;
+  margin: auto;
+  border-radius:8px;
+  box-shadow: 10px 8px 6px  #69a7e4;
+
+}
+
+main .skill aside{
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  color:white;
+
+}
+
+.skill .title h2.skil{
+  color:#69a7e4
+}
+.skill aside .gambar{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  gap: 2rem;
+  height:200px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+  background:#69a7e4;
+  padding:30px;
+  border-radius:5px;
+}
+
+
+.skill aside .gambar img{
+  width:80px;
+  height:80px;
+  border-radius:8px;
+  transition: all 0.4s ease-in-out;
+  cursor:pointer;
+}
+.skill aside .gambar img:hover{
+  box-shadow: 10px 8px 6px  white;
+}
+
+footer {
+  height:65px;
+  color: white;
+  margin-top:90px;
+  background:#69a7e4;
+  text-align: center;
+  font-weight: bold;
+  padding:5px;
+}
+
+/* Medium devices (768px dan di bawahnya) */
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+}
+
+header.navbar-container .nav-list ul {
+  flex-wrap: wrap;
+  column-gap: 0.5rem;
+}
+
+.jumbotron .content {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.jumbotron .content .content-decoration {
+  font-size: 3rem;
+}
+
+main .content-utama {
+  flex-direction: column;
+  gap: 2rem;
+}
+main {
+  padding: 1rem 3rem;
+}
+main .content-utama .content-description .title {
+  font-size: 3rem;
+}
+main .content .content-description p {
+  font-size: 1rem;
+}
+main .content .content-image {
+  order: -1;
+}
+main {
+  padding: 1rem 3rem;
+}
+main .content article {
+  flex-direction: column;
+  gap: 2rem;
+}
+main .skill .gambar {
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+main .skill .gambar img{
+  width:70pxx;
+  height:70px;
+}
+}
+
